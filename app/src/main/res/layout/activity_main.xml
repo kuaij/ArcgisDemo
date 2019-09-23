@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_base_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本地图"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_tian_di_tu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="天地图底图"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_local_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地图层加载"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

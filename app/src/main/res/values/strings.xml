@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ArcgisTestDemo</string>
+    <string name="vec">矢量地图</string>
+    <string name="img">影像地图</string>
+    <string name="ter">地形地图</string>
+    <string name="world_elevation_service">https://sampleserver5.arcgisonline.com/arcgis/rest/services/Elevation/WorldElevations/MapServer</string>
+</resources>
