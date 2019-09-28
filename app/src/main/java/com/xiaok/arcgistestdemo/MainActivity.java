@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         protected Boolean doInBackground(Void... voids) {
             try {
                 relaseDate(String.valueOf(getFilesDir())+"/WaterClub1.geodatabase");
+                relaseDate(String.valueOf(getFilesDir())+"/scene.slpk");
             } catch (IOException e) {
                 e.printStackTrace();
             }
