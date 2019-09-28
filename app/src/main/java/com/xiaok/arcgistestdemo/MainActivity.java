@@ -53,6 +53,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LocalDatabaseActivity.class));
             }
         });
+
+        //SLPK场景文件加载
+        Button btn_slpk = findViewById(R.id.btn_slpk);
+        btn_slpk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SLPKActivity.class));
+            }
+        });
+
+        //MSPK场景文件加载
+        Button btn_mspk = findViewById(R.id.btn_mspk);
+        btn_mspk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MSPKActivity.class));
+            }
+        });
+
+        //在线场景加载
+        Button btn_online = findViewById(R.id.btn_online);
+        btn_online.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, OnlineActivity.class));
+            }
+        });
     }
 
 
@@ -62,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(Void... voids) {
             try {
-                relaseDate(String.valueOf(getFilesDir())+"/WaterClub1.geodatabase");
-                relaseDate(String.valueOf(getFilesDir())+"/scene.slpk");
+                relaseDate(String.valueOf(getFilesDir())+"/WaterClub1.geodatabase","WaterClub1.geodatabase");
+                relaseDate(String.valueOf(getFilesDir())+"/scene.slpk","gym_model.slpk");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -73,10 +100,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void relaseDate(String strOutFileName) throws IOException {
+    private void relaseDate(String strOutFileName, String strInFileName) throws IOException {
         InputStream myInput;
         OutputStream myOutput = new FileOutputStream(strOutFileName);
-        myInput = getAssets().open("WaterClub1.geodatabase");
+        myInput = getAssets().open(strInFileName);
         byte[] buffer = new byte[1024];
         int length = myInput.read(buffer);
         while(length > 0)

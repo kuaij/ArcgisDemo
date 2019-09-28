@@ -23,7 +23,7 @@ public class SLPKActivity extends AppCompatActivity {
         mSceneView.setScene(scene);
         mSceneView.setAttributionTextVisible(false);  //去掉Esri logo
 
-        String filepath = "/data/data/com.xiaok.arcgisscenedemo/files/scene.slpk";  //三维场景文件路径
+        String filepath = "/data/data/com.xiaok.arcgistestdemo/files/scene.slpk";  //三维场景文件路径
         if (!filepath.isEmpty()) {
             ArcGISSceneLayer sceneLayer = new ArcGISSceneLayer(filepath); // 实例化图层对象
             scene.getOperationalLayers().add(sceneLayer);  //添加三维场景图层
