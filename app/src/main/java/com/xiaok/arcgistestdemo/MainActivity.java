@@ -80,6 +80,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, OnlineActivity.class));
             }
         });
+
+        //地图事件交互
+        Button btn_listener = findViewById(R.id.btn_listener);
+        btn_listener.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MapViewListenerActivity.class));
+            }
+        });
     }
 
 

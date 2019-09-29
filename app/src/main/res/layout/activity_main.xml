@@ -14,7 +14,7 @@
         android:text="基本地图"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/btn_tian_di_tu"
@@ -60,6 +60,15 @@
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:text="在线场景文件加载"/>
+
+    <Button
+        android:id="@+id/btn_listener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="地图事件监听"/>
 
 
 

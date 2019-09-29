@@ -27,8 +27,9 @@
         <activity android:name=".BaseMapActivity" />
         <activity android:name=".SLPKActivity" />
         <activity android:name=".MSPKActivity" />
-        <activity android:name=".OnlineActivity"/>
-        <activity android:name=".LocalDatabaseActivity"></activity>
+        <activity android:name=".OnlineActivity" />
+        <activity android:name=".LocalDatabaseActivity" />
+        <activity android:name=".MapViewListenerActivity"></activity>
     </application>
 
 </manifest>
